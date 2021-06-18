@@ -38,7 +38,7 @@
             $mail->setFrom($email, $name);
             $mail->addAddress('luis.pando@mixen.mx');     //Add a recipient
             // $mail->addAddress('');     //Add extra recipient
-            $mail->addReplyTo($email, 'Necesito información adicional');
+            $mail->addReplyTo($email, 'I need more information');
 
             //Content
             $mail->isHTML(true);                                  //Set email format to HTML
