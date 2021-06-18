@@ -1,0 +1,69 @@
+// Mouse selection
+@mixin selection($color, $background) {
+    ::-moz-selection {
+        color: $color;
+        background: $background;
+    }
+    ::selection {
+        color: $color;
+        background: $background;
+    }
+}
+
+// Transitions
+@mixin transition($property, $time) {
+  -webkit-transition: $property $time;
+       -o-transition: $property $time;
+          transition: $property $time;
+}
+
+@mixin transition-menu($time) {
+    -webkit-transition: $time;
+         -o-transition: $time;
+            transition: $time;
+}
+
+// Absolute centering X
+@mixin absolute-center-x {
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
+}
+
+// Absolute centering Y
+@mixin absolute-center-y {
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+}
+
+// Banner button animation
+@mixin banner-button-animation($seg) {
+    -webkit-animation: button-animation $seg infinite;
+            animation: button-animation $seg infinite;
+}
+
+// Keyframes
+@keyframes button-animation {
+    0%, 100% {
+        bottom: 20px;
+    }
+    50% {
+        bottom: 30px;
+    }
+}
+
+// Remove internal padding container-fluid
+@mixin container-fluid {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+// Scale
+@mixin scale($foo) {
+    -webkit-transform: scale($foo) !important;
+        -ms-transform: scale($foo) !important;
+            transform: scale($foo) !important;
+}

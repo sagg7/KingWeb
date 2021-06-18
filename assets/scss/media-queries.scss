@@ -1,0 +1,135 @@
+// Extra small devices (portrait phones, less than 576px)
+// No media query for `xs` since this is the default in Bootstrap
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+    .modal-content {
+        .modal-body {
+            .m-content {
+                &::before {
+                    left: 40%;
+                    -webkit-transform: translateX(-40%);
+                        -ms-transform: translateX(-40%);
+                            transform: translateX(-40%);
+                }
+            }
+        }
+    }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+    .modal-content {
+        .modal-body {
+            .m-content {
+                &::before {
+                    left: 39%;
+                    -webkit-transform: translateX(-39%);
+                        -ms-transform: translateX(-39%);
+                            transform: translateX(-39%);
+                }
+            }
+        }
+    }
+
+    #about-us {
+        .container-fluid {
+            @include container-fluid;
+        }
+    }
+
+    #services {
+        margin-top: 60px;
+
+        #who-we-are {
+            height: 100%;
+        }
+    }
+
+    #reasons-carousel {
+        #carouselReasons{
+            .carousel-control-prev,
+            .carousel-control-next {
+                height: 15%;
+            }
+
+            .carousel-control-prev {
+                left: 67%;
+            }
+
+            .carousel-control-next {
+                right: 12%;
+            }
+        }
+    }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+    .modal-content {
+        .modal-body {
+            .m-header {
+                &::before,
+                &::after {
+                    @include scale(1);
+                }
+
+                &::before {
+                    left: 100px;
+                }
+
+
+                &::after {
+                    right: 100px;
+                }
+            }
+
+            .m-content {
+                &::before {
+                    @include scale(1);
+                    left: 43%;
+                    -webkit-transform: translateX(-43%);
+                        -ms-transform: translateX(-43%);
+                            transform: translateX(-43%);
+                }
+            }
+        }
+    }
+
+    #reasons-carousel {
+        #carouselReasons{
+            .carousel-control-prev {
+                left: 65%;
+            }
+
+            .carousel-control-next {
+                right: 10%;
+            }
+        }
+    }
+
+    #testimonials {
+        .testimonial {
+            min-height: auto;
+
+            .thumbnail {
+                background-position: center !important;
+            }
+        }
+    }
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+    #reasons-carousel {
+        #carouselReasons{
+            .carousel-control-prev {
+                left: 65%;
+            }
+
+            .carousel-control-next {
+                right: 15%;
+            }
+        }
+    }
+}
