@@ -35,7 +35,7 @@
         try {
             //Recipients
             $mail->setFrom($email, $name);
-            $mail->addAddress('luis.pando@mixen.mx');     //Add a recipient
+            $mail->addAddress('info@kinglogisticoil.com');     //Add a recipient
             // $mail->addAddress('');     //Add extra recipient
             $mail->addReplyTo($email, 'I need more information');
 
