@@ -12,8 +12,15 @@ body {
 }
 
 a {
+    color: $titulo-1;
     text-decoration: none;
     @include transition(ease, 0.3s);
+
+    &:hover,
+    &:focus {
+        color: $titulo-1;
+        text-decoration: underline;
+    }
 }
 
 .btn {
@@ -26,6 +33,7 @@ a {
     &:hover,
     &:focus {
         color: $primary;
+        text-decoration: none;
     }
 }
 
@@ -196,6 +204,15 @@ footer {
     color: $primary;
     position: relative;
     z-index: 10;
+
+    a {
+        color: $primary;
+
+        &:hover,
+        &:focus {
+            color: $primary;
+        }
+    }
 
     #line,
     #down-arrow {
@@ -521,6 +538,15 @@ footer {
     padding: 100px 0;
     color: $texto-3;
 
+    a {
+        color: $primary;
+        
+        &:hover,
+        &:focus  {
+            color: $primary;
+        }
+    }
+
     h1 {
         color: $primary;
     }
@@ -631,6 +657,7 @@ footer {
         &:hover,
         &:focus {
             color: $titulo-2;
+            text-decoration: none;
         }
     }
     
