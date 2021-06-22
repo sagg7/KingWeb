@@ -3,6 +3,17 @@
 
 // Small devices (landscape phones, 576px and up)
 @media (min-width: 576px) {
+    #home {
+        .btn {
+            bottom: 30px;
+            right: 42px !important;
+            left: auto;
+            -webkit-transform: none;
+                -ms-transform: none;
+                    transform: none;
+        }
+    }
+
     .modal-content {
         .modal-body {
             .m-content {

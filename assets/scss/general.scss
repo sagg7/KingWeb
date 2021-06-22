@@ -213,6 +213,23 @@ footer {
         border-bottom-right-radius: 10px;
     }
 
+    .btn {
+        background-color: transparent;
+        border: 1px solid $primary;
+        font-size: 1.2rem;
+        float: left;
+        position: absolute;
+        bottom: 126px;
+        z-index: 3;
+        @include absolute-center-x;
+
+        &:hover,
+        &:focus {
+            background-color: $primary;
+            color: $info;
+        }
+    }
+
     #carouselBanner {
         width: 100%;
         min-height: 100vh;
