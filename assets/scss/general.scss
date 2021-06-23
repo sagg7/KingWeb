@@ -139,6 +139,10 @@ a {
     }
 }
 
+.accordion-button:not(.collapsed) {
+    color: $info;
+}
+
 header,
 section,
 footer {
@@ -598,10 +602,19 @@ footer {
     // background-size: cover;
     padding: 100px 0;
     color: $primary;
+    overflow: hidden;
 
     #logo-green {
         max-width: 140px;
         margin-top: 14px;
+    }
+}
+
+#faq {
+    padding: 100px 0 60px;
+
+    h1 {
+        color: $titulo-1;
     }
 }
 
