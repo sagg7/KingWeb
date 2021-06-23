@@ -139,6 +139,7 @@ a {
     }
 }
 
+.accordion-button:not(.collapsed),
 .accordion-button:not(.collapsed) {
     color: $info;
 }
@@ -239,16 +240,19 @@ footer {
         border: 1px solid $primary;
         font-size: 1.2rem;
         float: left;
-        position: absolute;
-        bottom: 126px;
-        z-index: 3;
-        @include absolute-center-x;
 
         &:hover,
         &:focus {
             background-color: $primary;
             color: $info;
         }
+    }
+
+    .btn-floating {
+        position: absolute;
+        bottom: 126px;
+        z-index: 3;
+        @include absolute-center-x;
     }
 
     #carouselBanner {
@@ -439,8 +443,9 @@ footer {
 }
 
 #cta {
-    // background: url('../images/bg-cta.jpg') no-repeat center / cover;
-    // background-size: cover;
+    background: url('../images/bg-cta.jpg') no-repeat center / cover;
+    background-size: cover;
+    background-attachment: fixed;
     padding: 100px 0;
     color: $primary;
     text-align: center;
@@ -463,7 +468,7 @@ footer {
 }
 
 #testimonials {
-    padding: 100px 0;
+    padding: 100px 0 60px;
 
     .container-fluid {
         @include container-fluid;

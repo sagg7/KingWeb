@@ -46,11 +46,11 @@
                         <a class="nav-link anchor" href="#testimonials" data-bs-toggle="collapse" data-bs-target="#navbarToggler">Testimonials</a>
                     </li -->
                     <li class="nav-item">
-                        <a class="nav-link anchor" href="#faq" data-bs-toggle="collapse" data-bs-target="#navbarToggler">FAQ</a>
-                    </li>
-                    <li class="nav-item">
                         <a class="nav-link anchor" href="#get-an-appointment" data-bs-toggle="collapse"
                             data-bs-target="#navbarToggler">Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link anchor" href="#faq" data-bs-toggle="collapse" data-bs-target="#navbarToggler">FAQ</a>
                     </li>
                 </ul>
             </div>
@@ -59,7 +59,7 @@
 
     <section id="home">
         <div id="line"></div>
-        <a href="#get-an-appointment" class="btn btn-secondary btn-block">Contact Us</a>
+        <a href="#get-an-appointment" class="btn btn-secondary btn-block btn-floating">Contact Us</a>
         <div id="carouselBanner" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
@@ -169,19 +169,30 @@
         <div class="container">
             <div class="row">
                 <div class="col-12 col-md-3 my-auto">
-                    <h4>1st level</h4>
-                    <p>We are currently developing top-notch software.</p>
+                    <div class="row">
+                        <div class="col-12">
+                            <h4>Best price</h4>
+                            <p class="mb-4">in the Oil Field and Logistics Market</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <h4>Secure Payment</h4>
+                            <p>for Careers</p>
+                        </div>
+                    </div>
                 </div>
                 <div class="col-12 col-md-6 my-auto">
                     <div class="row">
                         <div class="col-12 col-md-6 text-md-center">
+                            <p>More than</p>
                             <h1 id="20-years"></h1>
-                            <p>Years in the oil business.</p>
+                            <p>years of experience.</p>
                         </div>
                         <div class="col-12 col-md-6 my-auto">
                             <div class="row">
                                 <div class="col-12">
-                                    <p class="mb-4">Full dedicated team to your needs.</p>
+                                    <p class="mb-4">Capacity for massive and immediate response.</p>
                                 </div>
                             </div>
                             <div class="row">
@@ -200,13 +211,13 @@
                             <h3 class="d-inline" id="twenty-four"></h3>
                             <h3 class="d-inline">/</h3>
                             <h3 class="d-inline" id="seven"></h3>
-                            <p class="d-block mb-4">The Client has a dedicated team at ther disposal 24/7.</p>
+                            <p class="d-block mb-4">Personalized attention.</p>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-12">
                             <h3 id="80-companies"></h3>
-                            <p>We have hired more than 80 companies that will help us develop this project.</p>
+                            <p>More than 80 companies will help us develop this project.</p>
                         </div>
                     </div>
                 </div>
@@ -344,7 +355,7 @@
                                                         data-bs-target="#investmentsStockModal">Investments stock</a>
                                                 </li>
                                             </ul>
-                                            <a href="#" class="btn btn-secondary">Read more.</a>
+                                            <!-- a href="#" class="btn btn-secondary">Read more.</a -->
                                         </div>
                                     </div>
                                 </div>
@@ -385,10 +396,15 @@
                     </div>
                 </div>
             </div>
+            <div class="row">
+                <div class="col-12 text-center">
+                    <a href="#get-an-appointment" class="btn btn-secondary">Contact Us</a>
+                </div>
+            </div>
         </div>
     </section>
 
-    <section id="cta" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400" data-parallax="scroll" data-image-src="./assets/images/bg-cta.jpg" data-bleed="30">
+    <section id="cta" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
         <div class="container">
             <div class="row">
                 <div class="col col-md-6 offset-md-3">
@@ -414,7 +430,7 @@
                     <p>Everybody has something to say, hear what the people think about us.</p>
                 </div>
             </div>
-            <div class="row mt-4">
+            <div class="row mt-4 mb-5">
                 <div class="col-12">
                     <div id="carouselTestimonials" class="carousel carousel-dark slide" data-bs-ride="carousel">
                         <div class="carousel-inner">
@@ -606,6 +622,11 @@
                             <button type="button" data-bs-target="#carouselTestimonials" data-bs-slide-to="2" aria-label="Slide 3"></button>
                         </div>
                     </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 text-center">
+                    <a href="#get-an-appointment" class="btn btn-secondary">Contact Us</a>
                 </div>
             </div>
         </div>
@@ -853,69 +874,6 @@
         </div>
     </section>
 
-    <section id="faq">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 text-center">
-                    <h1 data-aos="fade-right">FAQ.</h1>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-12 col-md-8 offset-md-2">
-                    <div class="accordion accordion-flush" id="accordionFaq">
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="flush-headingOne">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                                    Pregunta #1
-                                </button>
-                            </h2>
-                            <div id="flush-collapseOne" class="accordion-collapse collapse show" aria-labelledby="flush-headingOne"
-                                data-bs-parent="#accordionFaq">
-                                <div class="accordion-body">
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis ex repudiandae veniam nam ad cum consequatur in eaque
-                                    a quasi, recusandae reprehenderit vel laborum placeat ratione iusto deserunt debitis fuga.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="flush-headingTwo">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                                    Pregunta #2
-                                </button>
-                            </h2>
-                            <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
-                                data-bs-parent="#accordionFaq">
-                                <div class="accordion-body">
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis ex repudiandae veniam nam ad cum consequatur in
-                                        eaque
-                                        a quasi, recusandae reprehenderit vel laborum placeat ratione iusto deserunt debitis fuga.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="flush-headingThree">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                                    Pregunta #3
-                                </button>
-                            </h2>
-                            <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
-                                data-bs-parent="#accordionFaq">
-                                <div class="accordion-body">
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis ex repudiandae veniam nam ad cum consequatur in
-                                        eaque
-                                        a quasi, recusandae reprehenderit vel laborum placeat ratione iusto deserunt debitis fuga.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <section id="get-an-appointment" data-aos="fade-in" data-aos-delay="500">
         <div class="container">
             <div class="row">
@@ -976,6 +934,123 @@
         </div>
     </section>
 
+    <section id="faq">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h1 data-aos="fade-right">FAQ.</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-8 offset-md-2">
+                    <div class="accordion accordion-flush" id="accordionFaq" data-aos="fade-right" data-aos-delay="200">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingOne">
+                                <button class="accordion-button " type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseOne" aria-expanded="true"
+                                    aria-controls="flush-collapseOne">
+                                    What states do we serve?
+                                </button>
+                            </h2>
+                            <div id="flush-collapseOne" class="accordion-collapse collapse show"
+                                aria-labelledby="flush-headingOne" data-bs-parent="#accordionFaq">
+                                <div class="accordion-body">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis ex repudiandae
+                                        veniam nam ad cum consequatur in eaque
+                                        a quasi, recusandae reprehenderit vel laborum placeat ratione iusto deserunt debitis
+                                        fuga.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseTwo" aria-expanded="false"
+                                    aria-controls="flush-collapseTwo">
+                                    What kind of trucks do you have?
+                                </button>
+                            </h2>
+                            <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                                aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFaq">
+                                <div class="accordion-body">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis ex repudiandae
+                                        veniam nam ad cum consequatur in
+                                        eaque
+                                        a quasi, recusandae reprehenderit vel laborum placeat ratione iusto deserunt debitis
+                                        fuga.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseThree" aria-expanded="false"
+                                    aria-controls="flush-collapseThree">
+                                    How much insurance do you have?
+                                </button>
+                            </h2>
+                            <div id="flush-collapseThree" class="accordion-collapse collapse"
+                                aria-labelledby="flush-headingThree" data-bs-parent="#accordionFaq">
+                                <div class="accordion-body">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis ex repudiandae
+                                        veniam nam ad cum consequatur in
+                                        eaque
+                                        a quasi, recusandae reprehenderit vel laborum placeat ratione iusto deserunt debitis
+                                        fuga.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingFour">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseFour" aria-expanded="false"
+                                    aria-controls="flush-collapseFour">
+                                    What is "Safety"?
+                                </button>
+                            </h2>
+                            <div id="flush-collapseFour" class="accordion-collapse collapse"
+                                aria-labelledby="flush-headingFour" data-bs-parent="#accordionFaq">
+                                <div class="accordion-body">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis ex repudiandae
+                                        veniam nam ad cum
+                                        consequatur in
+                                        eaque
+                                        a quasi, recusandae reprehenderit vel laborum placeat ratione iusto deserunt debitis
+                                        fuga.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingFive">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseFive" aria-expanded="false"
+                                    aria-controls="flush-collapseFive">
+                                    How many trips can the make in one day?
+                                </button>
+                            </h2>
+                            <div id="flush-collapseFive" class="accordion-collapse collapse"
+                                aria-labelledby="flush-headingFive" data-bs-parent="#accordionFaq">
+                                <div class="accordion-body">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis ex repudiandae
+                                        veniam nam ad cum
+                                        consequatur in
+                                        eaque
+                                        a quasi, recusandae reprehenderit vel laborum placeat ratione iusto deserunt debitis
+                                        fuga.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 text-center">
+                    <a href="#get-an-appointment" class="btn btn-secondary" data-aos="fade-right">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <footer>
         <div class="container">
             <div class="row" data-aos="fade-down" data-aos-delay="900">
@@ -1010,14 +1085,14 @@
                                     <a class="anchor" href="#testimonials">Testimonials</a>
                                 </h1>
                             </li -->
-                            <li data-aos="fade-right" data-aos-delay="400">
-                                <h1>
-                                    <a class="anchor" href="#faq">FAQ</a>
-                                </h1>
-                            </li>
                             <li data-aos="fade-right" data-aos-delay="500">
                                 <h1>
                                     <a class="anchor" href="#get-an-appointment">Contact Us</a>
+                                </h1>
+                            </li>
+                            <li data-aos="fade-right" data-aos-delay="400">
+                                <h1>
+                                    <a class="anchor" href="#faq">FAQ</a>
                                 </h1>
                             </li>
                         </ul>
