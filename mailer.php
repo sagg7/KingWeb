@@ -24,7 +24,8 @@
     $mail->Username   = 'luispandomixen@gmail.com';                     //SMTP username
     $mail->Password   = 'fK)ZK}.^A=14K^YRV3vt';                               //SMTP password
     $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;         //Enable TLS encryption; `PHPMailer::ENCRYPTION_SMTPS` encouraged
-    $mail->Port       = 587;    
+    $mail->Port       = 587;
+    $mail->SMTPDebug = 1;
 
     if(isset($_POST['nombre'])) {
         $name = strip_tags(trim($_POST["nombre"]));
@@ -35,7 +36,7 @@
         try {
             //Recipients
             $mail->setFrom($email, $name);
-            $mail->addAddress('info@kinglogisticoil.com');     //Add a recipient
+            $mail->addAddress('luis.pando@mixen.mx');     //Add a recipient
             // $mail->addAddress('');     //Add extra recipient
             $mail->addReplyTo($email, 'I need more information');
 
