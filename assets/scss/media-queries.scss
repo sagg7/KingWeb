@@ -14,6 +14,14 @@
         }
     }
 
+    #testimonials {
+        .testimonial {
+            .thumbnail {
+                background-position: top !important;
+            }
+        }
+    }
+
     .modal-content {
         .modal-body {
             .m-content {
@@ -30,6 +38,14 @@
 
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) {
+    #testimonials {
+        .testimonial {
+            .thumbnail {
+                background-position: center top !important;
+            }
+        }
+    }
+
     .modal-content {
         .modal-body {
             .m-content {
@@ -122,10 +138,6 @@
     #testimonials {
         .testimonial {
             min-height: auto;
-
-            .thumbnail {
-                background-position: center !important;
-            }
         }
     }
 }
