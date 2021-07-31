@@ -273,7 +273,7 @@ footer {
             animation: animate-carousel-text 0.5s normal forwards;
         }
 
-         @keyframes animate-carousel-text {
+        @keyframes animate-carousel-text {
             0% {
                 opacity: 0;
                 transform: translate(-3em, 0);
