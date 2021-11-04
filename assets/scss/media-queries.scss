@@ -4,6 +4,12 @@
 // Small devices (landscape phones, 576px and up)
 @media (min-width: 576px) {
     #home {
+        #carouselBanner {
+            .carousel-item.active h1 {
+                font-size: 4rem;
+            }
+        }
+
         .btn-floating {
             bottom: 30px;
             right: 42px !important;
@@ -14,7 +20,58 @@
         }
     }
 
+    #home-landing {
+        padding-top: 76px;
+
+        #carouselBanner {
+            .carousel-item.active h1 {
+                font-size: 4rem;
+            }
+        }
+
+        .btn-floating {
+            bottom: 30px;
+            right: 42px !important;
+            left: auto;
+            -webkit-transform: none;
+                -ms-transform: none;
+                    transform: none;
+        }
+    }
+
+    #what-we-do {
+        h1 {
+            font-size: 5rem;
+        }
+    }
+
+     #stats {
+        h1 {
+            font-size: 5rem;
+        }
+
+        #stats-right {
+            padding: 60px;
+        }
+    }
+
+    #our-clients {
+        h1 {
+            font-size: 5rem;
+        }
+    }
+
+    #our-people-say {
+        h1 {
+            font-size: 5rem;
+        }
+    }
+
     #testimonials {
+        h1 {
+            font-size: 5rem;
+        }
+
         .testimonial {
             .thumbnail {
                 background-position: top !important;
@@ -34,10 +91,22 @@
             }
         }
     }
+
+    #stats {
+        #stats-left {
+            h1 {
+                left: -28px;
+            }
+        }
+    }
 }
 
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) {
+    #home-landing {
+        padding-top: 78px;
+    }
+
     #testimonials {
         .testimonial {
             .thumbnail {
@@ -89,10 +158,24 @@
             }
         }
     }
+
+    footer {
+        .navbar {
+            .navbar-brand {
+                transform: translateX(-50%);
+                left: 50%;
+                position: absolute;
+            }
+        }
+    }
 }
 
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) {
+    #home-landing {
+        padding-top: 0;
+    }
+
     .modal-content {
         .modal-body {
             .m-header {

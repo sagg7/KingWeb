@@ -1,6 +1,5 @@
 // Libraries
 import 'bootstrap';
-import 'jquery-parallax.js';
 
 // Local Scripts
 import '../src/font-awesome-pseudo-elements';
@@ -12,6 +11,7 @@ import '../src/animate-numbers';
 
 // Sticky navbar
 $(window).scroll(function () {
+    // Navbar home
     if ($(this).scrollTop() > 15) {
         $('#navbar').addClass('bg-light');
         $("#logo").attr("src", "./assets/images/logo-2.png");
