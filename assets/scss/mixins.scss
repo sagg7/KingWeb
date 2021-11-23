@@ -67,3 +67,10 @@
         -ms-transform: scale($foo) !important;
             transform: scale($foo) !important;
 }
+
+// Transition on the x axis
+@mixin transform-x($foo) {
+    -webkit-transform: translateX($foo);
+        -ms-transform: translateX($foo);
+            transform: translateX($foo);
+}
