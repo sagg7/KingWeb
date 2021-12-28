@@ -176,6 +176,12 @@ footer {
             @include transition(ease, 0.3s);
         }
     }
+
+    .navbar-text {
+        .nav-link {
+            display: inline-block;
+        }
+    }
 }
 
 .navbar-dark {
@@ -471,7 +477,7 @@ footer {
 
     .service {
         width: 100%;
-        height: auto;
+        min-height: 100%;
         padding: 60px 40px;
         background-size: cover !important;
         background-position: center !important;
